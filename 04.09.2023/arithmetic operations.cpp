@@ -5,13 +5,13 @@ int main()
 	printf ("Enter two numbers");
 	scanf ("%d %d",&a,&b);
 	c=a+b;
-	printf ("The sum of two numbers is %d", c);
+	printf ("The sum of two numbers is %d\n", c);
 	d =a-b;
-	printf ("The difference of two numbers is %d", d);
+	printf ("The difference of two numbers is %d\n", d);
 	e = a*b;
-	printf ("The product of two numbers is %d", e);
+	printf ("The product of two numbers is %d\n", e);
 	f = a/b;
-	printf ("The quotient of two numbers is %d", f);
+	printf ("The quotient of two numbers is %d\n", f);
 	return 0;
 }
 
