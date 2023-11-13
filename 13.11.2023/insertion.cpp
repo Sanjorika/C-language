@@ -19,6 +19,7 @@ int main()
     		str[i]=str[i-1];
     	str[x]=c;
     	str[l+2]='\0';
+	printf("%s is the new string",str);    
     }
     else
     printf("Invalid position");
