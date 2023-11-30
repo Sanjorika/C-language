@@ -1,18 +1,14 @@
 #include<stdio.h>
-void convert(char str[]) 
-{
+int main()
+ {
+    char str[1000];
+    printf("Enter a string");
+    scanf("%s", str);
     for (int i = 0; str[i] != '\0'; i++) 
 	{
         if (str[i] >= 'A' && str[i] <= 'Z') 
             str[i] = str[i] + 32;
-    }
-}
-int main()
- {
-    char x[1000];
-    printf("Enter a string");
-    scanf("%s", x);
-    convert(x);
-    printf("%s is the string in lowercase\n", x);
+	}
+    printf("%s is the string in lowercase\n", str);
     return 0;
 }
