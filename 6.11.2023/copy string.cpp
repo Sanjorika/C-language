@@ -3,8 +3,10 @@ int main()
 {
 	int i=0;
     char str1[1000],str2[1000]; 
-    printf("Enter the string");
+    printf("Enter the string-1");
     scanf("%s", str1);
+    printf("Enter the string-2");
+    scanf("%s", str2);
     while(str1[i]!='\0')
     {
     	str2[i]=str1[i];
