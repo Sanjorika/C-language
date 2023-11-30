@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main()
+{
+    int i=0,l1=0,l2=0;
+    char s1[1000],s2[1000];
+    printf("Enter the first string");
+    scanf("%s",s1);
+    printf("Enter the second string");
+    scanf("%s",s2);
+    while(s1[i]!='\0')
+    {
+        l1++;
+        i++;
+    }
+    i=0;
+    while(s2[i]!='\0')
+    {
+        l2++;
+        i++;
+    }
+    if(l1==l2)
+    {
+        for(int i=0;i<l1;i++)
+        {
+            if(s1[i]!=s2[i])
+                printf("Both strings are unequal");
+        }
+        printf("Both strings are equal"); 
+    }
+    else
+        printf("Both strings are unequal");
+    return 0;
+}
