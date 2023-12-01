@@ -20,6 +20,6 @@ int main()
 	if(r!=-1)
 	printf("%d is the first ocuurence of %c\n",r,x);
 	else
-	printf("%c isn't found in the given string\n");
+	printf("%c isn't found in the given string\n",x);
     return 0;
 }
