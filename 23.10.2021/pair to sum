@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int n,sum,i,j;
+    printf("Enter the length of array");
+    scanf("%d",&n);
+    int a[n];
+    printf("Enter the values in array");
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+    printf("Enter the required sum");  
+    scanf("%d",&sum);
+    for(i=0;i<n;i++)
+    {
+        for(j=i+1;j<n;j++)
+        {
+            if(a[i]+a[j]==sum)
+            {
+                printf("%d and %d sums to %d",a[i],a[j],sum);
+                return 0;
+            }
+        }
+    }
+}
